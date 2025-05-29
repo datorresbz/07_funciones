@@ -18,7 +18,12 @@ int suma(int n1,int n2){
 }
 void division(int n1,int n2){
     int div;
-    div=n1/n2;
+    if(n2==0){
+    	div=0;
+	}
+	else{
+		div=n1/n2;
+	}
     cout<<"La divison entre "<<n1<<" entre "<< n2<<" es igual a: "<<div<<endl;
     
 }
