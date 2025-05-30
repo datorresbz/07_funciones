@@ -16,11 +16,13 @@ void divisionConRestas(int num1, int num2) {
         cout << "Error: No se puede dividir por cero" << endl;
         return;
     }
-    
+    cout<< "Dividiendo " << mayor << " entre " << menor << " usando restas sucesivas:\n";
+    cout<< "----------------------------------"<<endl;
     int cociente = 0;
     int resto = mayor;
     
-    while(resto >= menor) {
+    
+	while(resto >= menor) {
         resto = resto - menor;
         cociente=cociente+1;          
 	}
@@ -30,15 +32,14 @@ void divisionConRestas(int num1, int num2) {
 }
 
 int main() {
-    int a, b;
+    int num1,num2;
     
     cout << "Ingrese el primer numero: ";
-    cin >> a;
+    cin >> num1;
     
     cout << "Ingrese el segundo numero: ";
-    cin >> b;
+    cin >> num2;
     
-    divisionConRestas(a, b);
-    
-    return 0;
+    divisionConRestas(num1,num2);
 }
+    
