@@ -1,11 +1,17 @@
 #include<iostream>
 using namespace std;
+void SumaFibonacci(int n);
 int main(){
-	int n,i,numero1,numero2,fibonacci;
+	int n;
+	cout << "Ingrese el numero de terminos de Fibonacci a calcular: ";
 	cin>>n;
+	cout<<endl<<"Suma Finobacci"<<endl;
+	SumaFibonacci(n);
+}
+void SumaFibonacci(int n){
+	int i,numero1,numero2,fibonacci;
 	numero1=0;
 	numero2=1;
-	cout<<"Suma Finobacci"<<endl;
 	for(i=1;i<=n;i++){
 		fibonacci=numero1+numero2;
 		cout<<numero1<<"+"<<numero2<<"="<<fibonacci<<endl;
