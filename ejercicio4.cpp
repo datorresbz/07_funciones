@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 int numperfecto(int numero){
+	if(numero<=1){
+		return 0;
+	}
 	int i,numeroperfecto;
 	numeroperfecto = 1;
 	for(i=2;i<numero;i++){
