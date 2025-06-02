@@ -1,20 +1,10 @@
 #include<iostream>
 using namespace std;
-int sumaamigoA(int a){
+int sumaamigo(int n){
 	int i,suma;
 	suma = 0;
-	for(i=1;i<=a/2;i++){
-		if(a % i == 0){
-			suma = suma + i;
-		}
-	}
-	return suma;
-}
-int sumaamigoB(int b){
-	int i,suma;
-	suma = 0;
-	for(i=1;i<=b/2;i++){
-		if(b % i == 0){
+	for(i=1;i<=n/2;i++){
+		if(n % i == 0){
 			suma = suma + i;
 		}
 	}
@@ -22,9 +12,12 @@ int sumaamigoB(int b){
 }
 int main(){
 	int a,b,sumaA,sumaB;
-	cin>>a>>b;
-	sumaA=sumaamigoA(a);
-	sumaB=sumaamigoB(b)	;
+	cout<<"Introzca el primer numero: ";
+	cin>>a;
+	cout<<"Introzca el segundo numero: ";
+	cin>>b;
+	sumaA=sumaamigo(a);
+	sumaB=sumaamigo(b);
 	if(sumaA == b && sumaB == a){
 		cout<<a<<" y "<< b << " son numeros amigos"	;
 	}
