@@ -13,16 +13,21 @@ int sumaamigo(int n){
 int main(){
 	int a,b,sumaA,sumaB;
 	cout<<"Introzca el primer numero: ";
-	cin>>a;
+	cin>>a;	
 	cout<<"Introzca el segundo numero: ";
 	cin>>b;
-	sumaA=sumaamigo(a);
-	sumaB=sumaamigo(b);
-	if(sumaA == b && sumaB == a){
-		cout<<a<<" y "<< b << " son numeros amigos"	;
+	if(a>=0 && b>=0){
+		sumaA=sumaamigo(a);
+		sumaB=sumaamigo(b);
+		if(sumaA == b && sumaB == a){
+			cout<<a<<" y "<< b << " son numeros amigos"	;
+		}
+		else{
+			cout<<a<<" y "<< b << " no son numeros amigos"	;
+		}
 	}
 	else{
-		cout<<a<<" y "<< b << " no son numeros amigos"	;
+		cout<<"ERROR: INTRODUCA NUMEROS POSITIVOS";
 	}
 }
 		
