@@ -1,21 +1,25 @@
 #include <iostream>
 using namespace std;
-int veriprimo (int N);
-int main (){
+int vprimo (int N);
+int main () {
 	int n,v;
 	cout<<"VERIFICADOR DE NUMEROS PRIMOS"<<endl<<endl;
 	cout<<"Escriba un numero: ";
 	cin>>n;
 	cout<<endl;
-	v=veriprimo(n);
-	if (v==1)
-		cout<<"El numero " <<n<<": ES PRIMO";
+	v=vprimo(n);
+	if (n>0) {
+		if (v==1)
+			cout<<"El numero " <<n<<": ES PRIMO";
+		else
+			cout<<"El numero " <<n<<": NO ES PRIMO";
+	}
 	else
-		cout<<"El numero " <<n<<": NO ES PRIMO";
+		cout<<"Ha ingresado un valor erroneo (numero negativo o caracteres)";
 	return 0;
 }
 
-int veriprimo(int N) {
+int vprimo (int N) {
 	int c, i, V;
 	c=0;
 	for (i=1;i<=N;i++) {
